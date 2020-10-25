@@ -65,6 +65,6 @@ class ApiTest extends TestCase
     public function testGetProductInfoApi()
     {
         $response = $this->postJson('/api/product-info', ['offer_id' => 'item_001']);
-        $response->assertStatus(401);
+        $response->assertStatus(400);
     }
 }
